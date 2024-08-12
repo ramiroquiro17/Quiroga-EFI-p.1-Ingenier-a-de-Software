@@ -1,0 +1,10 @@
+crear un entorno: python3 -m venv nombredelentorno
+activar entorno: source nombredelentorno/bin/activate
+crear un proyecto en Django:django-admin startproject nombredelproyecto
+correr un proyecto: python3 manage.py runserver
+crear una app en django: python3 manage.py startapp nombredelaapp
+crear usuario: python3 manage.py createsuperuser --username nombredeusuario
+correr migraciones: python3 manage.py migrate
+generar archivo de migraciones django: python3 manage.py makemigrations
+abrir shell: python3 manage.py shell
+

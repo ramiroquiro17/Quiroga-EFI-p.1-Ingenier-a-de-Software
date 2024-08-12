@@ -1,0 +1,71 @@
+{% extends "home/base.html" %}
+{% block content %}
+<div class="container mt-3">
+    <h2>Registrar Auto</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label>Marca</label>
+            <select name="id_marca" class="form-control">
+                <option value="">Selecciona una marca</option>
+                {% for marca in marcas %}
+                    <option value="{{ marca.id }}">{{ marca.nombre }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Modelo</label>
+            <select name="id_modelo" class="form-control">
+                <option value="">Selecciona un modelo</option>
+                {% for modelo in modelos %}
+                    <option value="{{ modelo.id }}">{{ modelo.nombre }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Categoría</label>
+            <select name="id_categoria" class="form-control">
+                <option value="">Selecciona una categoría</option>
+                {% for categoria in categorias %}
+                    <option value="{{ categoria.id }}">{{ categoria.nombre }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Pais de fabricación</label>
+            <select name="id_pais" class="form-control">
+                <option value="">Selecciona un pais</option>
+                {% for pais in paises %}
+                    <option value="{{ pais.id }}">{{ pais.nombre }}</option>
+                {% endfor %}
+            </select>
+            <div class="form-group">
+                <label>Color</label>
+                <select name="id_color" class="form-control">
+                    <option value="">Selecciona un color</option>
+                    {% for color in colores %}
+                        <option value="{{ color.id }}">{{ color.nombre }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Precio</label>
+                <input type="number" step="1000" name="precio" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Numero de puertas</label>
+                <input type="number"  name="numero_de_puertas" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Cilindrada</label>
+                <input type="number"  name="cilindrada" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label>Tipo de Combustible</label>
+                <input type="text"  name="tipo_de_combustible" class="form-control" required>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+</div>
+{% endblock %}

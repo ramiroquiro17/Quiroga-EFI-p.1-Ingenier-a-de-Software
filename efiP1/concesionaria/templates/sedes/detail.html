@@ -1,0 +1,18 @@
+{% extends "home/base.html" %}
+{% block content %}
+<div class="container mt-3">
+    <h2>Detalles de la Sede</h2>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{ sede.nombre }}</h5>
+            <p class="card-text"><strong>Ciudad:</strong> {{ sede.ciudad_id.nombre }}</p>
+            <p class="card-text"><strong>Gerente:</strong> {{ sede.gerente }}</p>
+            <p class="card-text"><strong>Dirección:</strong> {{ sede.direccion }}</p>
+            <p class="card-text"><strong>Número de teléfono:</strong> {{ sede.telefono }}</p>
+            <a href="{% url 'sede_update' sede.id%}" class="btn btn-primary">Editar</a>
+            <a href="{% url 'sede_delete' sede.id%}" class="btn btn-danger">Borrar</a>
+            <a href="{% url 'sede_list' %}" class="btn btn-secondary">Volver a la lista</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
