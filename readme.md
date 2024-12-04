@@ -3,7 +3,7 @@
 ```git clone https://github.com/ramiroquiro17/Quiroga-EFI-p.1-Ingenier-a-de-Software.git ```
 
 - Ingresa al directorio
-```cd Quiroga-EFI-p.1-Ingenier-a-de-Software``
+```cd Quiroga-EFI-p.1-Ingenier-a-de-Software```
 - Deberas crear tu entorno virtual
 - Ejecutar el comando
 ```python3 -m venv env ```
