@@ -2,7 +2,22 @@ from django.shortcuts import render, redirect
 
 from concesionaria.repositories.proveedor import ProveedorRepository
 
+from django.utils.translation import (
+    activate,
+    get_language,
+    gettext_lazy as _,
+    deactivate
+)
+from users.models import Profile
+
+def updateLang(request):
+     if not request.user.is_anonymous:
+            profile = Profile.objects.get(user=request.user)
+            lang = profile.language
+            activate(lang)
+
 def proveedor_list(request):
+    updateLang(request)
     proveedor_repository = ProveedorRepository()
     proveedores = proveedor_repository.get_all()
     return render(
@@ -14,6 +29,7 @@ def proveedor_list(request):
     )
 
 def proveedor_detail(request, id:int):
+    updateLang(request)
     proveedor_repository = ProveedorRepository()
     proveedor = proveedor_repository.get_by_id(id)
     
@@ -34,6 +50,7 @@ def proveedor_delete(request, id: int):
 
 
 def proveedor_update(request, id: int):
+    updateLang(request)
     proveedor_repository = ProveedorRepository()
     proveedor = proveedor_repository.get_by_id(id)
     if request.method == 'POST':
@@ -54,6 +71,7 @@ def proveedor_update(request, id: int):
     )
 
 def proveedor_create(request):
+    updateLang(request)
     proveedor_repository = ProveedorRepository()
     if request.method == 'POST':
         nombre = request.POST.get('nombre')

@@ -1,0 +1,111 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-27 20:07-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
+
+#: concesionaria/models.py:5 concesionaria/models.py:11
+#: concesionaria/models.py:18 concesionaria/models.py:24
+#: concesionaria/models.py:30 concesionaria/models.py:38
+#: concesionaria/models.py:44 concesionaria/models.py:88
+msgid "nombre"
+msgstr ""
+
+#: concesionaria/models.py:31
+msgid "provincia"
+msgstr ""
+
+#: concesionaria/models.py:45 concesionaria/models.py:91
+msgid "dirección"
+msgstr ""
+
+#: concesionaria/models.py:46 concesionaria/models.py:92
+msgid "teléfono"
+msgstr ""
+
+#: concesionaria/models.py:58
+msgid "marca"
+msgstr ""
+
+#: concesionaria/models.py:59
+msgid "modelo"
+msgstr ""
+
+#: concesionaria/models.py:60
+msgid "categoria"
+msgstr ""
+
+#: concesionaria/models.py:61
+msgid "color"
+msgstr ""
+
+#: concesionaria/models.py:62
+msgid "pais"
+msgstr ""
+
+#: concesionaria/models.py:64
+msgid "número de puertas"
+msgstr ""
+
+#: concesionaria/models.py:65
+msgid "cilindrada"
+msgstr ""
+
+#: concesionaria/models.py:66
+msgid "tipo de combustible"
+msgstr ""
+
+#: concesionaria/models.py:67
+msgid "precio"
+msgstr ""
+
+#: concesionaria/models.py:77
+msgid "auto"
+msgstr ""
+
+#: concesionaria/models.py:79
+msgid "autor"
+msgstr ""
+
+#: concesionaria/models.py:80
+msgid "texto"
+msgstr ""
+
+#: concesionaria/models.py:81
+msgid "fecha"
+msgstr ""
+
+#: concesionaria/models.py:82
+msgid "puntuación"
+msgstr ""
+
+#: concesionaria/models.py:89
+msgid "ciudad"
+msgstr ""
+
+#: concesionaria/models.py:90
+msgid "gerente"
+msgstr ""
+
+#: efiP1/settings.py:114
+msgid "English"
+msgstr ""
+
+#: efiP1/settings.py:115
+msgid "Español"
+msgstr ""

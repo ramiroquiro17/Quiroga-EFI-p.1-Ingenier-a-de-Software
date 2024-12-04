@@ -3,10 +3,23 @@ from django.views import View
 from concesionaria.models import Comentario
 from concesionaria.repositories.autos import AutoRepository
 from concesionaria.repositories.comentario import ComentarioRepository
+from users.models import Profile
+from django.utils.translation import (
+    activate,
+    get_language,
+    gettext_lazy as _,
+    deactivate
+)
 
+def updateLang(request):
+     if not request.user.is_anonymous:
+            profile = Profile.objects.get(user=request.user)
+            lang = profile.language
+            activate(lang)
 
 class ComentarioView(View):
     def get(self, request, *args, **kwargs):
+        updateLang(request)
         repo = ComentarioRepository()
         comentarios = repo.get_all()
         return render(
@@ -21,6 +34,7 @@ class ComentarioView(View):
 
 class ComentarioCreateView(View):
     def get(self, request, *args, **kwargs):
+        updateLang(request)
         repo = AutoRepository()
         autos = repo.get_all()
         return render(
@@ -48,6 +62,7 @@ class ComentarioCreateView(View):
         return redirect('comentario_detail',nuevo_comentario.id )
 class ComentarioDetailView(View):
     def get(self, request, id):
+        updateLang(request)
         review = get_object_or_404(Comentario, id=id)
         auto = AutoRepository().get_all()
         return render(

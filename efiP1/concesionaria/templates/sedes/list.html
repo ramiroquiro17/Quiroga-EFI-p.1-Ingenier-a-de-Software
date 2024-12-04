@@ -1,15 +1,16 @@
 {% extends "home/base.html" %}
+{% load i18n %}
 {% block content %}
 <div class="container mt-3">
-    <h2>Lista de Autos</h2>
-    <a href="{% url 'sede_create' %}" class="btn btn-primary mb-3">Registrar Sede</a>
+    <h2>{% trans "Lista de Sedes" %}</h2>
+    <a href="{% url 'sede_create' %}" class="btn btn-primary mb-3">{% trans "Registrar Sede" %}</a>
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>Nombre</th>
-                <th>ciudad</th>
-                <th>Dirección</th>
-                <th>telefono</th>
+                <th>{% trans "Nombre" %}</th>
+                <th>{% trans "ciudad" %}</th>
+                <th>{% trans "Dirección" %}</th>
+                <th>{% trans "telefono" %}</th>
             </tr>
         </thead>
         <tbody>
@@ -20,9 +21,9 @@
                 <td>{{ sede.direccion }}</td>
                 <td>{{ sede.telefono }}</td>
                 <td>
-                    <a href="{% url 'sede_detail' sede.id%}" class="btn btn-info btn-sm">Detalles</a>
-                    <a href="{% url 'sede_update' sede.id%}" class="btn btn-success btn-sm">Editar</a>
-                    <a href="{% url 'sede_delete' sede.id%}" class="btn btn-danger btn-sm">Eliminar</a>
+                    <a href="{% url 'sede_detail' sede.id%}" class="btn btn-info btn-sm">{% trans "Detalles" %}</a>
+                    <a href="{% url 'sede_update' sede.id%}" class="btn btn-success btn-sm">{% trans "Editar" %}</a>
+                    <a href="{% url 'sede_delete' sede.id%}" class="btn btn-danger btn-sm">{% trans "Eliminar" %}</a>
                 </td>
             </tr>
             {% endfor %}

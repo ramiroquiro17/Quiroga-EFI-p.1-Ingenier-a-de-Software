@@ -1,35 +1,36 @@
 {% extends "home/base.html" %}
+{% load i18n %}
 {% block content %}
 <div class="container mt-3">
-    <h2>Actualizar Auto</h2>
+    <h2>{% trans "Actualizar Auto" %}</h2>
     <form method="post">
         {% csrf_token %}
         <div class="form-group">
-            <label>Nombre</label>
+            <label>{% trans "Nombre" %}</label>
             <input type="text"  name="nombre" class="form-control" required>
         </div>
         <div class="form-group">
-            <label>Ciudad</label>
+            <label>{% trans "Ciudad" %}</label>
             <select name="id_ciudad" class="form-control">
-                <option value="">Selecciona una ciudad</option>
+                <option value="">{% trans "Selecciona una ciudad" %}</option>
                 {% for ciudad in ciudades %}
                     <option value="{{ ciudad.id }}">{{ ciudad.nombre }}</option>
                 {% endfor %}
             </select>
         </div>
         <div class="form-group">
-            <label>Gerente</label>
+            <label>{% trans "Gerente" %}</label>
             <input type="text"  name="gerente" class="form-control" required>
         </div>
         <div class="form-group">
-            <label>direccion</label>
+            <label>{% trans "direccion" %}</label>
             <input type="text"  name="direccion" class="form-control" required>
         </div>
         <div class="form-group">
-            <label>Telefono</label>
+            <label>{% trans "Telefono" %}</label>
             <input type="text"  name="telefono" class="form-control" required>
         </div>
-        <button type="submit" class="btn btn-primary">Actualizar</button>
+        <button type="submit" class="btn btn-primary">{% trans "Actualizar" %}</button>
     </form>
 </div>
 {% endblock %}

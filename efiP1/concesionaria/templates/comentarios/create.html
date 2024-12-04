@@ -1,27 +1,28 @@
 {% extends "home/base.html" %}
+{% load i18n %}
 {% block content %}
 <div class="container mt-3">
-    <h2>Mi Opinion</h2>
+    <h2>{% trans "Mi Opinion" %}</h2>
     <form method="post">
         {% csrf_token %}
         <div class="form-group">
-            <label>Auto</label>
+            <label>{% trans "Auto" %}</label>
             <select name="auto_id" class="form-control">
-                <option value="">Selecciona un Auto</option>
+                <option value="">{% trans "Selecciona un Auto" %}</option>
                 {% for auto in autos %}
                     <option value="{{ auto.id }}">{{ auto.marca }} {{ auto.modelo }}</option>
                 {% endfor %}
             </select>
         </div>
         <div class="form-group">
-            <label>Opinion</label>
+            <label>{% trans "Opinion" %}</label>
             <textarea name="text" class="form-control"></textarea>
         </div>
         <div class="form-group">
-            <label>Valoración</label>
+            <label>{% trans "Valoración" %}</label>
             <input type="number" step="1" min="1" max="10" name="rating" class="form-control" required>
         </div>
-        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="submit" class="btn btn-primary">{% trans "Guardar" %}</button>
     </form>
 </div>
 {% endblock %}

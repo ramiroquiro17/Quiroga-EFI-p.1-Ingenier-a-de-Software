@@ -1,12 +1,29 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth.decorators import login_required
-
+from django.utils.translation import (
+    activate,
+    get_language,
+    gettext_lazy as _,
+    deactivate
+)
+from users.models import Profile
 from concesionaria.models import Categoria, Modelo, Marca, Pais, Color
 from concesionaria.repositories.autos import AutoRepository
 
 repo = AutoRepository()
 
+def updateLang(request):
+     if not request.user.is_anonymous:
+            profile = Profile.objects.get(user=request.user)
+            lang = profile.language
+            activate(lang)
+
 def auto_list(request):
+    # if not request.user.is_anonymous:
+    #         profile = Profile.objects.get(user=request.user)
+    #         lang = profile.language
+    #         activate(lang)
+    updateLang(request)
     autos = repo.get_all()
     return render(
         request,
@@ -17,6 +34,7 @@ def auto_list(request):
     )
 
 def auto_detail(request, id):
+    updateLang(request)
     auto = repo.get_by_id(id=id)
     return render(
         request,
@@ -31,6 +49,7 @@ def auto_delete(request, id):
 
 @login_required(login_url='login')
 def auto_update(request, id):
+    updateLang(request)
     auto = repo.get_by_id(id)
     categorias = Categoria.objects.all()
     marcas = Marca.objects.all()
@@ -85,6 +104,7 @@ def auto_update(request, id):
     )
 
 def auto_create(request):
+    updateLang(request)
     categorias = Categoria.objects.all()
     marcas = Marca.objects.all()
     modelos = Modelo.objects.all()

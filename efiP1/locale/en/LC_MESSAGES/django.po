@@ -1,0 +1,439 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-29 16:30-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: concesionaria/models.py:5 concesionaria/models.py:11
+#: concesionaria/models.py:18 concesionaria/models.py:24
+#: concesionaria/models.py:30 concesionaria/models.py:38
+#: concesionaria/models.py:44 concesionaria/models.py:88
+msgid "nombre"
+msgstr "name"
+
+#: concesionaria/models.py:31
+msgid "provincia"
+msgstr "province"
+
+#: concesionaria/models.py:45 concesionaria/models.py:91
+msgid "dirección"
+msgstr "address"
+
+#: concesionaria/models.py:46 concesionaria/models.py:92
+msgid "teléfono"
+msgstr "phone number"
+
+#: concesionaria/models.py:58
+msgid "marca"
+msgstr "brand"
+
+#: concesionaria/models.py:59
+msgid "modelo"
+msgstr "model"
+
+#: concesionaria/models.py:60
+msgid "categoria"
+msgstr "category"
+
+#: concesionaria/models.py:61
+msgid "color"
+msgstr "color"
+
+#: concesionaria/models.py:62
+msgid "pais"
+msgstr "country"
+
+#: concesionaria/models.py:64
+msgid "número de puertas"
+msgstr "number of doors"
+
+#: concesionaria/models.py:65
+msgid "cilindrada"
+msgstr "displacement"
+
+#: concesionaria/models.py:66
+msgid "tipo de combustible"
+msgstr "type of fuel"
+
+#: concesionaria/models.py:67
+msgid "precio"
+msgstr "price"
+
+#: concesionaria/models.py:77 concesionaria/templates/comentarios/list.html:13
+msgid "auto"
+msgstr "car"
+
+#: concesionaria/models.py:79
+msgid "autor"
+msgstr "author"
+
+#: concesionaria/models.py:80
+msgid "texto"
+msgstr "text"
+
+#: concesionaria/models.py:81
+msgid "fecha"
+msgstr "date"
+
+#: concesionaria/models.py:82
+msgid "puntuación"
+msgstr "valuation"
+
+#: concesionaria/models.py:89 concesionaria/templates/sedes/list.html:11
+msgid "ciudad"
+msgstr "city"
+
+#: concesionaria/models.py:90
+msgid "gerente"
+msgstr "manager"
+
+#: concesionaria/templates/autos/create.html:5
+#: concesionaria/templates/autos/list.html:6
+msgid "Registrar Auto"
+msgstr "Register Car"
+
+#: concesionaria/templates/autos/create.html:9
+#: concesionaria/templates/autos/list.html:10
+#: concesionaria/templates/autos/update.html:9
+msgid "Marca"
+msgstr "Brand"
+
+#: concesionaria/templates/autos/create.html:18
+#: concesionaria/templates/autos/list.html:11
+#: concesionaria/templates/autos/update.html:18
+msgid "Modelo"
+msgstr "Model"
+
+#: concesionaria/templates/autos/create.html:20
+#: concesionaria/templates/autos/update.html:20
+msgid "Selecciona un modelo"
+msgstr "Select a model"
+
+#: concesionaria/templates/autos/create.html:27
+#: concesionaria/templates/autos/detail.html:10
+#: concesionaria/templates/autos/update.html:27
+#: concesionaria/templates/comentarios/update.html:20
+msgid "Categoría"
+msgstr "Category"
+
+#: concesionaria/templates/autos/create.html:29
+#: concesionaria/templates/autos/update.html:29
+msgid "Selecciona una categoría"
+msgstr "Select a category"
+
+#: concesionaria/templates/autos/create.html:36
+#: concesionaria/templates/autos/update.html:36
+msgid "Pais de fabricación"
+msgstr "Country of manufacture"
+
+#: concesionaria/templates/autos/create.html:38
+#: concesionaria/templates/autos/update.html:38
+msgid "Selecciona un pais"
+msgstr "Select a country"
+
+#: concesionaria/templates/autos/create.html:44
+#: concesionaria/templates/autos/detail.html:11
+#: concesionaria/templates/autos/list.html:12
+msgid "Color"
+msgstr "Color"
+
+#: concesionaria/templates/autos/create.html:46
+#: concesionaria/templates/autos/update.html:46
+msgid "Selecciona un color"
+msgstr "Select a color"
+
+#: concesionaria/templates/autos/create.html:53
+#: concesionaria/templates/autos/detail.html:9
+#: concesionaria/templates/autos/list.html:13
+#: concesionaria/templates/autos/update.html:53
+#: concesionaria/templates/comentarios/update.html:16
+msgid "Precio"
+msgstr "Price"
+
+#: concesionaria/templates/autos/create.html:57
+#: concesionaria/templates/autos/detail.html:12
+#: concesionaria/templates/autos/update.html:57
+msgid "Numero de puertas"
+msgstr "Number of doors"
+
+#: concesionaria/templates/autos/create.html:61
+#: concesionaria/templates/autos/detail.html:13
+#: concesionaria/templates/autos/update.html:61
+msgid "Cilindrada"
+msgstr "Displacement"
+
+#: concesionaria/templates/autos/create.html:65
+#: concesionaria/templates/autos/update.html:65
+msgid "Tipo de Combustible"
+msgstr "Type of fuel"
+
+#: concesionaria/templates/autos/create.html:69
+#: concesionaria/templates/comentarios/create.html:25
+#: concesionaria/templates/proveedores/create.html:21
+#: concesionaria/templates/sedes/create.html:34
+msgid "Guardar"
+msgstr "Save"
+
+#: concesionaria/templates/autos/detail.html:5
+msgid "Detalles del Auto"
+msgstr "Car Details"
+
+#: concesionaria/templates/autos/detail.html:14
+#: concesionaria/templates/autos/list.html:25
+#: concesionaria/templates/proveedores/detail.html:13
+#: concesionaria/templates/proveedores/list.html:23
+#: concesionaria/templates/sedes/detail.html:14
+#: concesionaria/templates/sedes/list.html:25
+msgid "Editar"
+msgstr "Edit"
+
+#: concesionaria/templates/autos/detail.html:15
+#: concesionaria/templates/proveedores/detail.html:14
+#: concesionaria/templates/sedes/detail.html:15
+msgid "Borrar"
+msgstr "Delete"
+
+#: concesionaria/templates/autos/detail.html:16
+#: concesionaria/templates/proveedores/detail.html:15
+#: concesionaria/templates/sedes/detail.html:16
+msgid "Volver a la lista"
+msgstr "Go back to list"
+
+#: concesionaria/templates/autos/list.html:5
+msgid "Lista de Autos"
+msgstr "List of Cars"
+
+#: concesionaria/templates/autos/list.html:24
+#: concesionaria/templates/comentarios/list.html:29
+#: concesionaria/templates/proveedores/list.html:22
+#: concesionaria/templates/sedes/list.html:24
+msgid "Detalles"
+msgstr "Details"
+
+#: concesionaria/templates/autos/list.html:26
+#: concesionaria/templates/comentarios/list.html:32
+#: concesionaria/templates/proveedores/list.html:24
+#: concesionaria/templates/sedes/list.html:26
+msgid "Eliminar"
+msgstr "Delete"
+
+#: concesionaria/templates/autos/update.html:5
+#: concesionaria/templates/sedes/update.html:5
+msgid "Actualizar Auto"
+msgstr "Update Car"
+
+#: concesionaria/templates/autos/update.html:11
+msgid "Selecciona una marca"
+msgstr "Select a brand"
+
+#: concesionaria/templates/autos/update.html:68
+#: concesionaria/templates/comentarios/update.html:33
+#: concesionaria/templates/sedes/update.html:33
+msgid "Actualizar"
+msgstr "Update"
+
+#: concesionaria/templates/comentarios/create.html:5
+msgid "Mi Opinion"
+msgstr "My Opinion"
+
+#: concesionaria/templates/comentarios/create.html:9
+msgid "Auto"
+msgstr "Car"
+
+#: concesionaria/templates/comentarios/create.html:11
+msgid "Selecciona un Auto"
+msgstr "Select a Car"
+
+#: concesionaria/templates/comentarios/create.html:18
+#: concesionaria/templates/comentarios/list.html:15
+msgid "Opinion"
+msgstr "Review"
+
+#: concesionaria/templates/comentarios/create.html:22
+msgid "Valoración"
+msgstr "Rating"
+
+#: concesionaria/templates/comentarios/list.html:6
+msgid "Lista de Opiniones"
+msgstr "List of Reviews"
+
+#: concesionaria/templates/comentarios/list.html:8
+msgid "Dar una opinion"
+msgstr "Leave a Review"
+
+#: concesionaria/templates/comentarios/list.html:14
+msgid "Autor"
+msgstr "Car"
+
+#: concesionaria/templates/comentarios/list.html:16
+msgid "Fecha"
+msgstr "Date"
+
+#: concesionaria/templates/comentarios/list.html:17
+msgid "Valuacion"
+msgstr "Evaluation"
+
+#: concesionaria/templates/comentarios/update.html:4
+msgid "Actualizar Opinion"
+msgstr "Update Review"
+
+#: concesionaria/templates/comentarios/update.html:8
+#: concesionaria/templates/proveedores/create.html:9
+#: concesionaria/templates/proveedores/list.html:10
+#: concesionaria/templates/sedes/create.html:9
+#: concesionaria/templates/sedes/list.html:10
+#: concesionaria/templates/sedes/update.html:9
+msgid "Nombre"
+msgstr "Name"
+
+#: concesionaria/templates/comentarios/update.html:12
+msgid "Descripción"
+msgstr "Description"
+
+#: concesionaria/templates/comentarios/update.html:30
+#: concesionaria/templates/proveedores/detail.html:12
+msgid "Stock"
+msgstr "Stock"
+
+#: concesionaria/templates/proveedores/create.html:5
+#: concesionaria/templates/proveedores/list.html:6
+msgid "Crear Proveedor"
+msgstr "Create a Supplier"
+
+#: concesionaria/templates/proveedores/create.html:13
+#: concesionaria/templates/proveedores/detail.html:10
+#: concesionaria/templates/sedes/detail.html:12
+#: concesionaria/templates/sedes/list.html:12
+msgid "Dirección"
+msgstr "address"
+
+#: concesionaria/templates/proveedores/create.html:17
+#: concesionaria/templates/proveedores/list.html:12
+#: concesionaria/templates/sedes/create.html:30
+#: concesionaria/templates/sedes/update.html:30
+msgid "Telefono"
+msgstr ""
+
+#: concesionaria/templates/proveedores/detail.html:5
+msgid "Detalles del Proveedor"
+msgstr "Supplier Details"
+
+#: concesionaria/templates/proveedores/detail.html:11
+msgid "Teléfono"
+msgstr "Phone Number"
+
+#: concesionaria/templates/proveedores/list.html:5
+msgid "Lista de Proveedores"
+msgstr "List of Supplier"
+
+#: concesionaria/templates/proveedores/list.html:11
+msgid "Direccion"
+msgstr "Address"
+
+#: concesionaria/templates/sedes/create.html:5
+#: concesionaria/templates/sedes/list.html:6
+msgid "Registrar Sede"
+msgstr "Register Store"
+
+#: concesionaria/templates/sedes/create.html:13
+#: concesionaria/templates/sedes/detail.html:10
+#: concesionaria/templates/sedes/update.html:13
+msgid "Ciudad"
+msgstr "City"
+
+#: concesionaria/templates/sedes/create.html:15
+#: concesionaria/templates/sedes/update.html:15
+msgid "Selecciona una ciudad"
+msgstr "Select a brand"
+
+#: concesionaria/templates/sedes/create.html:22
+#: concesionaria/templates/sedes/detail.html:11
+#: concesionaria/templates/sedes/update.html:22
+msgid "Gerente"
+msgstr "Manager"
+
+#: concesionaria/templates/sedes/create.html:26
+#: concesionaria/templates/sedes/update.html:26
+msgid "direccion"
+msgstr "address"
+
+#: concesionaria/templates/sedes/detail.html:6
+msgid "Detalles de la Sede"
+msgstr "Store Details"
+
+#: concesionaria/templates/sedes/detail.html:13
+msgid "Número de teléfono"
+msgstr "Phone Number"
+
+#: concesionaria/templates/sedes/list.html:5
+msgid "Lista de Stores"
+msgstr "List of Reviews"
+
+#: concesionaria/templates/sedes/list.html:13
+msgid "telefono"
+msgstr "Phone Number"
+
+#: efiP1/settings.py:116
+msgid "English"
+msgstr "English"
+
+#: efiP1/settings.py:117
+msgid "Español"
+msgstr "Español"
+
+#: home/templates/home/base.html:14
+msgid "Inicio"
+msgstr "Home"
+
+#: home/templates/home/base.html:15
+msgid "Listado de Autos"
+msgstr "List of Cars"
+
+#: home/templates/home/base.html:16
+msgid "Listado de Sedes"
+msgstr "List of Stores"
+
+#: home/templates/home/base.html:17
+msgid "Listado de Proveedores"
+msgstr "List of Suppliers"
+
+#: home/templates/home/base.html:18
+msgid "Opiniones"
+msgstr "Reviews"
+
+#: home/templates/home/base.html:25
+msgid "Salir"
+msgstr "Log Out"
+
+#: home/templates/home/base.html:27 home/templates/home/login.html:19
+msgid "Ingresar"
+msgstr "Log In"
+
+#: home/templates/home/index.html:10
+msgid "Bienvenido"
+msgstr "Welcome"
+
+#: home/templates/home/index.html:11
+msgid "Al Sistema"
+msgstr "To the System"
+
+#: home/templates/home/login.html:8
+msgid "Ingrese al sitio"
+msgstr "Enter the site"
+
+#: home/templates/home/login.html:14
+msgid "Usuario"
+msgstr "Username"

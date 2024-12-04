@@ -1,15 +1,16 @@
 {% extends "home/base.html" %}
 {% block content %}
+{% load i18n %}
 <div class="container mt-3">
-    <h2>Lista de Autos</h2>
-    <a href="{% url 'auto_create' %}" class="btn btn-primary mb-3">Registrar Auto</a>
+    <h2>{% trans "Lista de Autos" %}</h2>
+    <a href="{% url 'auto_create' %}" class="btn btn-primary mb-3">{% trans "Registrar Auto" %}</a>
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Color</th>
-                <th>Precio</th>
+                <th>{% trans "Marca" %}</th>
+                <th>{% trans "Modelo" %}</th>
+                <th>{% trans "Color" %}</th>
+                <th>{% trans "Precio" %}</th>
             </tr>
         </thead>
         <tbody>
@@ -20,9 +21,9 @@
                 <td>{{ auto.color }}</td>
                 <td>{{ auto.precio }}</td>
                 <td>
-                    <a href="{% url 'auto_detail' auto.id%}" class="btn btn-info btn-sm">Detalles</a>
-                    <a href="{% url 'auto_update' auto.id%}" class="btn btn-success btn-sm">Editar</a>
-                    <a href="{% url 'auto_delete' auto.id%}" class="btn btn-danger btn-sm">Eliminar</a>
+                    <a href="{% url 'auto_detail' auto.id%}" class="btn btn-info btn-sm">{% trans "Detalles" %}</a>
+                    <a href="{% url 'auto_update' auto.id%}" class="btn btn-success btn-sm">{% trans "Editar" %}</a>
+                    <a href="{% url 'auto_delete' auto.id%}" class="btn btn-danger btn-sm">{% trans "Eliminar" %}</a>
                 </td>
             </tr>
             {% endfor %}

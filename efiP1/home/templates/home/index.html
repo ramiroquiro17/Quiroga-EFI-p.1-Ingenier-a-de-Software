@@ -1,5 +1,5 @@
 {% extends 'home/base.html' %}
-
+{% load i18n %}
 {% block content %}
 <div class="row">
     <div class="col"></div>
@@ -7,8 +7,8 @@
         <div class="card">
             <img class="card-img-top" src="holder.js/100x180/" alt="">
             <div class="card-body">
-                <h4 class="card-title">Bienvenido {% if user.is_authenticated %} {{user.first_name}} {% endif %}</h4>
-                <p class="card-text">Al Sistema</p>
+                <h4 class="card-title">{% trans "Bienvenido" %} {% if user.is_authenticated %} {{user.first_name}} {% endif %}</h4>
+                <p class="card-text">{% trans "Al Sistema" %}</p>
             </div>
         </div>
     </div>

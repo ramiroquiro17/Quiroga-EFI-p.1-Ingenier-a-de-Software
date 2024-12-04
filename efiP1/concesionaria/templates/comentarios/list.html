@@ -1,34 +1,35 @@
 {% extends "home/base.html" %}
+{% load i18n %}
 {% block content %}
 
 <div class="container mt-3">
-    <h2>Lista de Opiniones</h2>
+    <h2>{% trans "Lista de Opiniones" %}</h2>
     {% if user.is_authenticated %}
-    <a href="{% url 'comentario_create' %}" class="btn btn-primary mb-3">Dar una opinion</a>
+    <a href="{% url 'comentario_create' %}" class="btn btn-primary mb-3">{% trans "Dar una opinion" %}</a>
     {% endif %}
     <table class="table table-striped">
         <thead>
             <tr>
-                <th>auto</th>
-                <th>Autor</th>
-                <th>Opinion</th>
-                <th>Fecha</th>
-                <th>Valuacion</th>
+                <th>{% trans "auto" %}</th>
+                <th>{% trans "Autor" %}</th>
+                <th>{% trans "Opinion" %}</th>
+                <th>{% trans "Fecha" %}</th>
+                <th>{% trans "Valuacion" %}</th>
             </tr>
         </thead>
         <tbody>
             {% for comentario in comentarios %}
             <tr>
                 <td>{{ comentario.auto }}</td>
-                <td>{{ comentario.author.first_name }} {{ comentario.author.last_name }}</td>
+                <td>{{ comentario.author.username }}</td>
                 <td>{{ comentario.text }}</td>
                 <td>{{ comentario.date }}</td>
                 <td>{{ comentario.rating }}</td>
                 <td>
-                    <a href="" class="btn btn-info btn-sm">Detalles</a>
+                    <a href="" class="btn btn-info btn-sm">{% trans "Detalles" %}</a>
                     {% if user.is_authenticated %}
                         
-                        <a href="{% url 'comentario_delete' comentario.id%}" class="btn btn-danger btn-sm">Eliminar</a>
+                        <a href="{% url 'comentario_delete' comentario.id%}" class="btn btn-danger btn-sm">{% trans "Eliminar" %}</a>
                     {% endif %}
                 </td>
             </tr>
