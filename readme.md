@@ -13,11 +13,11 @@ Esta es una aplicación creada para gestionar la información de una concesionar
    cd Quiroga-EFI-p.1-Ingenier-a-de-Software
    ```
 3. Ejecutar el comando
-  ```bash
+   ```bash
    python3 -m venv env 
    ```
 4. Activar el entorno virtual
-  ```bash
+   ```bash
    source env/bin/activate 
    ```
 5. Instala las dependencias necesarias:
@@ -143,7 +143,6 @@ Esta es una aplicación creada para gestionar la información de una concesionar
     "tipo_de_combustible": "Electric",
     "precio": "26706.00"
   },
-  ...
 ]
 ```
 
