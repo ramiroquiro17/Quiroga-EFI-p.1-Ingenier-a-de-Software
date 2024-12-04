@@ -1,4 +1,4 @@
-# **API de Concesionaria**
+# **App de Concesionaria**
 
 Esta es una aplicación creada para gestionar la información de una concesionaria. Permite manejar datos de autos, sedes, proveedores, usuarios y comentarios asociados a los autos.
 
